@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Default" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TTWeb._Default" Culture="auto:en-US" UICulture="auto" %>
+﻿<%@ Page Title="Test" Language="C#" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="TTWeb.Test" %>
 
 
 <!DOCTYPE html>
@@ -61,14 +61,7 @@ img.emoji {
         
         <a class="home-navbar navbar" href="javascript:;"></a>
         <nav class="home-navigation top-nav">
-<ul>
-    
-    <li>
-        <asp:HyperLink runat="server" NavigateUrl="Default.aspx?cc=vn"><asp:Image runat="server" ImageUrl="~/Images/vietnam.png" Width="18" Height="18" /></asp:HyperLink>
-    </li>
-
-    <li  class="onetone-menuitem">
-    <a id="onetone-home" href="#home" >
+<ul><li  class="onetone-menuitem"><a id="onetone-home" href="#home" >
  <span>Home</span></a></li><li  class="onetone-menuitem"><a id="onetone-about-us" href="#about-us" >
  <span>About Us</span></a></li><li  class="onetone-menuitem"><a id="onetone-services" href="#services" >
  <span>Services</span></a></li><li  class="onetone-menuitem"><a id="onetone-the-team" href="#the-team" >
@@ -246,7 +239,7 @@ THE FOREMOSTLAW GROUP
   <section id="contact" class="section  onetone-contact "  style=" background:url(Images/home-bg03.jpg)  repeat top left scroll;">
     	<div class="home-container page_container" >
 		        	<h1>Contact</h1>
-                        <p class="contact-text"><asp:Literal runat="server" ID="ltrContactVerbiage" meta:resourceKey="ltrContactVerbiage"></asp:Literal></p>
+                        <p class="contact-text">For any questions please feel free to fill out this form. Give us your name, email and a brief desciption. We will get back to you as soon as possible. Thank you</p>
 
 <div class="contact-area"><form class="contact-form" action="" method="post"><input id="name" tabindex="1" size="22" type="text" value="" placeholder="Name" />
 <input id="email" tabindex="2" size="22" type="text" value="" placeholder="Email" />
