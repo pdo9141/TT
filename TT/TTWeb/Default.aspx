@@ -25,6 +25,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
 <link rel='stylesheet' id='onetone-font-awesome-css'  href='Content/font-awesome.min.css?ver=4.0.3' type='text/css' media='' />
 <link rel='stylesheet' id='onetone-owl-carousel-css'  href='Content/owl.carousel.css?ver=1.3.3' type='text/css' media='' />
 <link rel='stylesheet' id='onetone-owl-theme-css'  href='Content/owl.theme.css?ver=1.3.3' type='text/css' media='' />
@@ -38,6 +39,10 @@ img.emoji {
 <script type='text/javascript' src='Scripts/modernizr.custom.js?ver=2.8.2'></script>
 <script type='text/javascript' src='Scripts/respond.min.js?ver=1.4.2'></script>
 <script type='text/javascript' src='Scripts/jquery.scrollTo.js?ver=1.4.14'></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script type='text/javascript' src='Scripts/script.js'></script>
 <meta name="generator" content="WordPress 4.2.2" />
 
         <style>
@@ -64,7 +69,7 @@ img.emoji {
 <ul>
     
     <li>
-        <asp:HyperLink runat="server" NavigateUrl="Default.aspx?cc=vn"><asp:Image runat="server" ImageUrl="~/Images/vietnam.png" Width="18" Height="18" /></asp:HyperLink>
+        <asp:HyperLink ID="hlCultureCode" runat="server" NavigateUrl="Default.aspx?cc=vn"><asp:Image ID="imgCultureCode" runat="server" ImageUrl="~/Images/vietnam.png" Width="18" Height="18" /></asp:HyperLink>
     </li>
 
     <li  class="onetone-menuitem">
@@ -81,6 +86,10 @@ img.emoji {
     	<div class="home-container page_container" >
 		            <div class="banner-box">
 <h1>The Foremostlaw Group</h1>
+
+                      
+        <button class="btn btn-primary" id="tryMe">Try Me</button>        
+
 <div class="sub-title">WE DON'T ONLY HELP YOU SEEK JUSTICE BUT WE ALSO HELP YOU GET PEACE OF MIND</div>
 <div class="banner-scroll"><a class="scroll" href="#about-us"><img src="Images/down.png" alt="" /></a></div>
 <div class="banner-sns">
